@@ -25,7 +25,7 @@ var check = setInterval(function () {
 
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
-    if (blockleft < 20 && blockleft > 0 && characterTop >= 130) {
+    if (blockleft < 20 && blockleft > 0 && characterTop >= 120) {
 
         block.style.animation = "none";
 
