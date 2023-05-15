@@ -1,22 +1,56 @@
-* {
+/* * {
 
     margin: 0;
 
     padding: 0;
 
+} */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 60px;
 }
 
-#main{
-    padding-left: 30%;
-    padding-right: 30%;
-    padding-top: 10%;
-    /* padding-bottom: 30%; */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
+
+.instructions,
+.game-block {
+  flex-basis: 50%;
+  max-width: 700px;
+}
+
+.score,
+.highest-score {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.score span,
+.highest-score span {
+    font-weight: bold;
+}
+
+
 
 h1{
     text-align: center;
-    text-decoration: underline;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: dashed;
+    padding: 10px;
    
+}
+ul>li{
+    font-family: 'Times New Roman', Times, serif;
 }
 #game {
 

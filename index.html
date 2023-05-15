@@ -18,24 +18,37 @@
 </head>
 
 <body>
+    <h1>Jumping Game</h1>
     <div id="main">
-        <h1>Jumping Game </h1>
-        <div id="game">
-
-            <div id="character">
-    
+        <!-- <h1>Jumping Game</h1> -->
+        <div class="row">
+          <div class="instructions">
+            <ul>
+              <h4>Instructions to play.</h4>
+              <li>Click on the "Start" button to begin the game.</li>
+              <li>After clicking the "Start" button, the game will start, and you will see two blocks on the screen: a smaller block and a larger block.</li>
+              <li>Your objective is to avoid the smaller block from colliding with the larger block by jumping. To do this, click anywhere on the screen with your mouse.</li>
+              <li>When you click, the smaller block will perform a jump, attempting to avoid collision with the larger block.</li>
+              <li>Keep clicking at appropriate times to make the smaller block jump and avoid the larger block.</li>
+              <li>If the smaller block collides with the larger block, the game is over, and you will need to restart.</li>
+            </ul>
+          </div>
+          <div class="game-block">
+            <div id="game">
+              <div id="character"></div>
+              <div id="block"></div>
             </div>
-    
-            <div id="block">
-    
+            <div class="score">
+                Score: <span id="scoreValue">0</span>
             </div>
-    
+            <div class="highest-score">
+                Highest Score: <span id="highestScoreValue">0</span>
+            </div>
+            <button id="btn" type="button" class="btn btn-primary btn-lg" onclick="start()">Start</button>
+          </div>
         </div>
-    
-        <button id="btn" type="button" class="btn btn-primary btn-lg" onclick="start()">Start</button>
-    </div>
-
-    
+      </div>
+      
 
 </body>
 
